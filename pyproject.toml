@@ -1,0 +1,25 @@
+[project]
+name = "langchainlearn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "technicalsupport3", email = "akashmahto1169@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "langchain>=1.4.0",
+    "langchain-community>=0.4.2",
+    "langchain-google-genai>=4.4.0",
+    "langchain-groq>=1.1.3",
+    "langchain-openai>=1.6.1",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+langchainlearn = "langchainlearn:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
